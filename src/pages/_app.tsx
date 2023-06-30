@@ -1,11 +1,11 @@
-import { HelloWorld } from "../src/components/HelloWorld";
-import "../public/css/styles.css";
+import CarList from "../components/CarList";
+import "../styles/global.scss";
 import React from "react";
 
 function HomePage() {
   return (
     <React.StrictMode>
-      <HelloWorld />
+      <CarList />
     </React.StrictMode>
   );
 }

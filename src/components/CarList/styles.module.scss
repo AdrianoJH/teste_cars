@@ -1,0 +1,160 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.boxFilter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    
+    label {
+        font-weight: bold;
+        margin-right: 10px;
+    }
+
+    select {
+        width: 100px;
+        padding: 3px;
+        font-size: 15px;
+        font-weight: bold;
+        border: 2px solid;
+    }
+
+    option {
+        font-size: 17px;
+        font-weight: bold;
+    }
+
+    @media(max-width: 768px) {
+        margin-top: 40px;
+    }
+}
+
+.content {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 30px;
+
+    @media(max-width: 768px) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+
+    }
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 300px;
+    height: 400px;
+    margin-top: 90px;
+
+    p {
+        text-align: start;
+        font-size: 18px;
+    }
+
+    p#bodyType {
+        margin-top: -20px;
+        margin-bottom: 5px;
+        font-weight: bold;
+        color: #8f8f8f;
+    }
+
+    p#modelName {
+        font-weight: bold;
+        color: #000;
+    }
+
+    p#modelType {
+        margin-left: 142px;
+        margin-top: -21px;
+        margin-bottom: 20px;
+        font-weight: 500;
+        color: #8f8f8f;
+    }
+
+    img {
+        width: 300px;
+        height: 250px;
+        filter: brightness(99%);
+    }
+
+}
+
+.cardFooter {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 220px;
+    margin-top: 40px;
+    margin-left: 40px;
+
+    a {
+        font-size: 15px;
+        font-weight: bold;
+        text-decoration: none;
+        color: #4c7cd6;
+    }
+
+    svg {
+        margin-bottom: -2px;
+    }
+}
+
+.boxButton {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding-right: 25px;
+
+    @media(max-width: 768px) {
+        display: none;
+    }
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    margin-top: 30px;
+    margin-right: 15px;
+    border-radius: 50%;
+    border: 0.5px solid;
+    cursor: pointer;
+
+    @media(max-width: 768px) {
+        display: none;
+    }
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+  
+    .dot {
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      border: none;
+      background-color: #ccc;
+      margin-right: 5px;
+      cursor: pointer;
+    }
+  
+    .activeDot {
+      background-color: #000;
+    }
+  }
+  
